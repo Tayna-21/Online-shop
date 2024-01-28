@@ -1,0 +1,66 @@
+[
+  {
+    "id": "11",
+    "img": "./img/all_items/forest_1.svg",
+    "title": "Stylish chair",
+    "price": "60.99",
+    "rate": "4",
+    "category": "Forest"
+  },
+  {
+    "id": "22",
+    "img": "./img/all_items/office_1.svg",
+    "title": "Stylish sofa",
+    "price": "121.70",
+    "rate": "5",
+    "category": "Office"
+  },
+  {
+    "id": "33",
+    "img": "./img/all_items/fox_kid_1.svg",
+    "title": "Stylish table",
+    "price": "49.99",
+    "rate": "5",
+    "category": "Foxkid"
+  },
+  {
+    "id": "44",
+    "img": "./img/all_items/fox_kid_2.svg",
+    "title": "Stylish sofa",
+    "price": "113.40",
+    "rate": "5",
+    "category": "Foxkid"
+  },
+  {
+    "id": "55",
+    "img": "./img/all_items/forest_2.svg",
+    "title": "Stylish chair",
+    "price": "147.85",
+    "rate": "5",
+    "category": "Forest"
+  },
+  {
+    "id": "66",
+    "img": "./img/all_items/other_1.svg",
+    "title": "Stylish table",
+    "price": "149.20",
+    "rate": "3",
+    "category": "Other"
+  },
+  {
+    "id": "77",
+    "img": "./img/all_items/forest_3.svg",
+    "title": "Stylish mirror",
+    "price": "107.17",
+    "rate": "5",
+    "category": "Forest"
+  },
+  {
+    "id": "88",
+    "img": "./img/all_items/fox_kid_3.svg",
+    "title": "Stylish chair",
+    "price": "90.99",
+    "rate": "4",
+    "category": "Foxkid"
+  }
+]

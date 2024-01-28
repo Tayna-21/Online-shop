@@ -1,0 +1,104 @@
+@import "vars.scss";
+@import "mixins.scss";
+@import "templates.scss";
+
+footer {
+  background-color: $footer_background_dark;
+  padding: 50px 10px 30px 10px;
+
+    .footer-content {
+      display: flex;
+      justify-content: space-between;
+      gap: 30px;
+      margin-bottom: 50px;
+
+      @media (max-width: 767px) {
+        flex-direction: column;
+        align-items: center;
+      }
+
+        .info {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          gap: 10px;
+          max-width: 270px;
+          height: 180px;
+
+          @media (max-width: 767px) {
+            align-items: center;
+          }
+
+            strong:hover {
+              transform: scale(1.05);
+              @extend %hover;
+            }
+
+            p {
+              @include adaptive-font(400, 14px, 0, 1.5em);
+
+              color: $white_color;
+
+              @media (max-width: 767px) {
+                text-align: center;
+              }
+            }
+
+            .social-media {
+              display: flex;
+
+                li {
+                  margin-right: 15px;
+
+                  &:hover {
+                    transform: scale(1.2);
+                    @extend %hover;
+                  }
+                }
+            }
+        }
+
+        nav {
+          display: flex;
+          justify-content: space-between;
+          flex-wrap: wrap;
+          flex: .8 1 auto;
+          gap: 30px;
+
+          @media (max-width: 767px) {
+            justify-content: space-between;
+            gap: 20px;
+          }
+
+            ul {
+                h6 {
+                  @include adaptive-font(600, 16px, 0, 1.5em);
+
+                  color: $white_color;
+                  margin-bottom: 15px;
+                }
+
+                li {
+                  margin-bottom: 10px;
+
+                    a {
+                      @include adaptive-font(400, 14px, 0, 1.2em);
+
+                      color: $white_color;
+
+                      &:hover {
+                        text-decoration: underline;
+                      }
+                    }
+                }
+            }
+        }
+    }
+
+    p:last-child {
+      @include adaptive-font(700, 12px, 0, 1.2em);
+
+      color: $white_color;
+      text-align: center;
+    }
+}

@@ -1,0 +1,29 @@
+@import "vars.scss";
+
+@mixin body-style {
+  margin: 0;
+  padding: 0;
+}
+
+@mixin content-container-style {
+  max-width: $content_container_width;
+  margin: 0 auto;
+  padding: 0 30px;
+
+  @media (max-width: 767px) {
+    padding: $content_container_responsive_padding;
+  }
+}
+
+@mixin wrapper-style {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  background-color: $wrapper_background_light;
+  position: relative;
+}
+
+@mixin adaptive-font($weight, $start-value, $additional-value, $height, $font_family: $MontserratFont) {
+  font: $weight calc($start-value + $additional-value * (100vw / 1920))/$height $font_family;
+}
